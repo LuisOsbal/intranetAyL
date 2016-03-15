@@ -1,0 +1,27 @@
+doctype html
+html(lang="es")
+	head
+		//- Basic Needs
+		meta(charset="UTF-8")
+		title intranet A&L
+		meta(name="description" content="Instranet Arquitectura y Libertad.")
+		//- Humans
+		meta(name="author" content="http://intranet.a-l.com.mx/")
+		link(type="text/plain" rel="author" href="http://intranet.a-l.com.mx/docs/humans.txt")
+		meta(name="Copyright" content="http://intranet.a-l.com.mx/")
+		meta(name="robots" content="all")
+		//- Mobile Specific Metas
+		meta(name="viewport", content="width=device-width, minimum-scale=1, maximum-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		//- CSS
+		link(rel="stylesheet", href="../public/css/normalize.css")
+		link(rel="stylesheet", href="../public/css/style.css")
+		//- Analytics
+		//- script(src="./public/js/analytics.js")
+	body
+		header(class="Header")
+		include ./background/template.jade
+		include ./login/template.jade
+
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+script(src="./public/js/script.js")

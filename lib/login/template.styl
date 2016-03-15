@@ -1,0 +1,48 @@
+@import "assets/resources.styl"
+
+.Login
+	width 100%
+	height 100vh
+	position absolute
+	top 0
+	right 0
+	background white
+	transition .5s
+	&-container
+		margin 5em auto
+	&-FormContainer
+		text-align center
+	&-form
+		margin-top 2em
+		padding 1em 1em 0
+	&-inputText
+		width 100%
+		height 1.5em
+		font-size 1.5em
+		margin-top 1em
+		&:focus
+			border 2px solid red
+	&-button
+		width 100%
+		height 2.5em
+		margin 3em 0 0 0
+		background red
+		color white
+		font-weight 400
+		font-size 1.2em
+	&-website
+		color red
+		cursor pointer
+		text-decoration underline
+		position absolute
+		bottom 3em
+		right 0
+		left 0
+@media screen and (min-width 768px)
+	.Login
+		transition .5s
+		width 45%
+@media screen and (min-width 1024px)
+	.Login
+		transition .5s
+		width 30%
